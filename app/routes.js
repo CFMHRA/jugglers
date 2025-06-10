@@ -8,6 +8,12 @@ const router = govukPrototypeKit.requests.setupRouter()
 
 // Add your routes here
 
+// Allowing Notify messages
+
+var NotifyClient = require('notifications-node-client').NotifyClient,
+    notify = new NotifyClient(process.env.NOTIFYAPIKEY);
+
+
 
 // Run this code when a form is submitted to 'juggling-balls-answer'
 router.post('/juggling-balls-answer', function (req, res) {
