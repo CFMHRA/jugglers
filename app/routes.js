@@ -38,7 +38,7 @@ router.post('/email-address-page', function (req, res) {
     // this long string is the template ID, copy it from the template
     // page in GOV.UK Notify. It’s not a secret so it’s fine to put it
     // in your code.
-    'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx',
+    '0409ddff-6c11-4837-8106-364e62ed37cf',
     // `emailAddress` here needs to match the name of the form field in
     // your HTML page
     req.body.emailAddress
