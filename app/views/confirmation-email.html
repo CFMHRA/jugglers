@@ -1,0 +1,39 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Confirmation page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      {{ govukPanel({
+        titleText: "Email sent",
+        html: "We have sent you an email"
+      }) }}
+
+      <p>
+        We have sent you an email.
+      </p>
+
+      <h2 class="govuk-heading-m">
+        What happens next
+      </h2>
+
+      <p>
+        Pay us the money
+      </p>
+
+      <p>
+        <a href="#">
+          What did you think of this service?
+        </a> (takes 30 seconds)
+      </p>
+
+
+    </div>
+  </div>
+
+{% endblock %}
